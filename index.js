@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var mamifero_1 = require("./mamifero");
+var carnivoro_1 = require("./carnivoro");
+var herbivoro_1 = require("./herbivoro");
+var omnivoro_1 = require("./omnivoro");
+var mamifero = new mamifero_1.Mamifero('placentario', 100, true, 4);
+var tigre = new carnivoro_1.Carnivoro('placentario', 150, true, 4, 'mediano');
+var vaca = new herbivoro_1.Herbivoro('placentarios', 200, true, 4, 'grande');
+var cerdo = new omnivoro_1.Omnivoro('placentario', 10, true, 14, 'chico');
+console.log('---Alimentacion del mamifero---');
+mamifero.comer();
+console.log('---Alimentacion de carnivoro---');
+tigre.comer();
+console.log('--Alimentacon de los herbivoros--');
+vaca.comer();
+console.log('--Alimentacion de los omnivoros--');
+cerdo.comer();
